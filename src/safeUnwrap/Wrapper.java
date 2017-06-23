@@ -3,9 +3,12 @@ package safeUnwrap;
 public class Wrapper extends Model{
     private Model Wrapped;
 
-    public Wrapper(Model wrapped) {
+    private Wrapper(Model wrapped) {
         super(wrapped.getColor(), wrapped.getAmount());
         Wrapped = wrapped;
     }
 
+    public static Wrapper createWrapper(Model wrapped) {
+        return (Wrapper) wrapped;
+    }
 }
