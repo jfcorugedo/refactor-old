@@ -8,7 +8,4 @@ public class Wrapper extends Model{
         Wrapped = wrapped;
     }
 
-    public static Wrapper createWrapper(Model wrapped) {
-        return (Wrapper) wrapped;
-    }
 }
