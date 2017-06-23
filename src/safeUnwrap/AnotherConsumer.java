@@ -3,8 +3,8 @@ package safeUnwrap;
 public class AnotherConsumer {
 
     public int getAmount(Model model){
-        Wrapper wrapper = new Wrapper(model);
+        Model myModel = new Wrapper(model);
 
-        return wrapper.getWrapped().getAmount();
+        return myModel.getWrapped().getAmount();
     }
 }
